@@ -1,2 +1,6 @@
 Host *
     User root
+
+Host raspberrypi.fritz.box
+    HostName raspberrypi.fritz.box
+    User pi
