@@ -10,3 +10,10 @@ function symbolic_link {
   fi
   ln -s $SOURCE $LINK_NAME
 }
+
+function mkdir_ifnotexists() {
+  DIRECTORY=$1
+  if [ ! -d $DIRECTORY ]; then
+    mkdir $DIRECTORY
+  fi
+}

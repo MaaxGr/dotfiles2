@@ -1,5 +1,9 @@
 #!/bin/zsh
 
-plugins=(zsh-autosuggestions)
+plugins=(
+  zsh-autosuggestions
+  git
+  npm
+)
 
 ZSH_THEME="robbyrussell"
