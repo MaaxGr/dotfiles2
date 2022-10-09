@@ -1,3 +1,6 @@
 #!/bin/sh
 
-eval "$(direnv hook zsh)"
+if type yay > /dev/null; then
+    eval "$(direnv hook zsh)"
+fi
+
