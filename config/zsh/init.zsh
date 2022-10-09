@@ -35,4 +35,5 @@ export PATH=$PATH:~/.scripts
 export EDITOR=/usr/bin/vim
 
 [[ -f ~/.rclocal ]] && source ~/.rclocal
+[[ -f ~/.secrets ]] && source ~/.secrets
 

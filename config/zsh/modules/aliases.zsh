@@ -7,5 +7,20 @@ alias ":q"="exit"
 alias "rm -rf /"="echo \"read mail really fast\""
 alias "pls"="sudo \$(history | tail -n1 | cut --complement -d' ' -f1)"
 alias "copy"="xsel -ib"
-alias upt="yay -Syu"
 alias pubkey="tail ~/.ssh/id_rsa.pub"
+
+
+# Check if yay installed
+if type yay > /dev/null; then
+    alias upt="yay -Syu"
+fi
+
+# Check if upt installed
+if type apt > /dev/null; then
+    alias upt="apt-get update && apt-get upgrade"
+fi
+
+# Check if macos
+if [[ `uname` == "Darwin" ]]; then
+    alias upt="brew update && brew upgrade"
+fi
