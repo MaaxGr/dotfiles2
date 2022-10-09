@@ -18,6 +18,8 @@ fi
 # Check if upt installed
 if type apt > /dev/null; then
     alias upt="apt-get update && apt-get --with-new-pkgs upgrade"
+    alias uptr="apt-get autoremove"
+
 fi
 
 # Check if macos
