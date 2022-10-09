@@ -17,7 +17,7 @@ fi
 
 # Check if upt installed
 if type apt > /dev/null; then
-    alias upt="apt-get update && apt-get upgrade"
+    alias upt="apt-get update && apt-get --with-new-pkgs upgrade"
 fi
 
 # Check if macos
