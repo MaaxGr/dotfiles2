@@ -32,6 +32,8 @@ export FZF_DEFAULT_OPTS='
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 export PATH=$PATH:~/.scripts
+export PATH=$PATH:~/.config/zsh/scripts/
+
 export EDITOR=/usr/bin/vim
 
 [[ -f ~/.rclocal ]] && source ~/.rclocal
