@@ -1,3 +1,13 @@
+#IdentityFile ~/.ssh/yubikey
+
+Host 474423.test-my-website.de
+    HostName 474423.test-my-website.de
+    User 121827f94227
+
+Host 474423.test-my-website.de
+    HostName 474423.test-my-website.de
+    User 121827f94227
+
 Host *
     User root
 

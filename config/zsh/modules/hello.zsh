@@ -5,7 +5,7 @@ hello() {
 }
 
 _hello() {
-  compadd kotlin python
+  #compadd kotlin python
 }
 
-compdef _hello hello
+#compdef _hello hello
