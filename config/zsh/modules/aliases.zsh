@@ -24,5 +24,5 @@ fi
 
 # Check if macos
 if [[ `uname` == "Darwin" ]]; then
-    alias upt="brew update && brew upgrade"
+    alias upt="brew update && brew upgrade && count-brew-updates"
 fi
