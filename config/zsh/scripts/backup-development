@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Source and destination
+SRC="/Users/max/Documents/Development/Projects/Privat/2025/"
+DEST="filer.home.maax.gr:/srv/files/Backups/macos/Development/"
+
+# List of folders to exclude from backup
+EXCLUDES=(
+  'node_modules/'
+  'build/'
+)
+
+# Build the --exclude options for rsync
+EXCLUDE_ARGS=()
+for EXCLUDE in "${EXCLUDES[@]}"; do
+  EXCLUDE_ARGS+=(--exclude "$EXCLUDE")
+done
+
+# Rsync options:
+# -a: archive mode (recursive, preserves permissions, times, etc.)
+# -h: human readable
+# -z: compress during transfer
+# --delete: delete files at destination that are not at source
+# --info=progress2: show an overall progress bar for the entire transfer
+# --exclude: exclude specified files or directories
+rsync -azh --delete --info=progress2 "${EXCLUDE_ARGS[@]}" "$SRC" "$DEST"
+
+# Print completion message
+echo "Backup completed from $SRC to $DEST" 

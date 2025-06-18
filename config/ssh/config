@@ -14,3 +14,7 @@ Host *
 Host raspberrypi.fritz.box
     HostName raspberrypi.fritz.box
     User pi
+
+Host rasp01.home.maax.gr 
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostKeyAlgorithms +ssh-rsa

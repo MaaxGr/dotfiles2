@@ -1,7 +1,7 @@
 source ./functions.zsh
 
 # Init .zshrc
-mv "$PWD/home/.zshrc" "$PWD/home/.zshrc_old"
+mv "$HOME/.zshrc" "$HOME/.zshrc_old"
 symbolic_link "$PWD/home/.zshrc" "$HOME/.zshrc"
 
 # Init config-zsh
